@@ -557,6 +557,18 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"7HuCa":[function(require,module,exports) {
+const takeOnefromButtonEl = document.querySelector('[data-action="decrement');
+const value = document.querySelector("#value");
+const addOneToButtonEl = document.querySelector('[data-action="increment');
+let counterValue = 0;
+takeOnefromButtonEl.addEventListener("click", ()=>{
+    counterValue--;
+    value.textContent = counterValue;
+});
+addOneToButtonEl.addEventListener("click", ()=>{
+    counterValue++;
+    value.textContent = counterValue;
+});
 
 },{}]},["79OKl","7HuCa"], "7HuCa", "parcelRequire31b1")
 

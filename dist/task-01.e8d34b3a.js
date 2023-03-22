@@ -557,6 +557,14 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"khBOr":[function(require,module,exports) {
+const docs = document.querySelectorAll(".item");
+console.log(`Number of categories: ${docs.length}`);
+docs.forEach((cat)=>{
+    const name = cat.firstElementChild.textContent;
+    const elementsCount = cat.lastElementChild.childElementCount;
+    console.log(`Category: ${name}`);
+    console.log(`Elements: ${elementsCount}`);
+});
 
 },{}]},["6vmNh","khBOr"], "khBOr", "parcelRequire31b1")
 

@@ -557,6 +557,13 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"e1CwR":[function(require,module,exports) {
+const input = document.querySelector("#validation-input");
+const validLength = Number(input.dataset.length);
+function validation() {
+    if (input.value.length === validLength) input.classList.add("valid");
+    else input.classList.add("invalid");
+}
+input.addEventListener("blur", validation);
 
 },{}]},["ez3fc","e1CwR"], "e1CwR", "parcelRequire31b1")
 

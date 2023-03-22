@@ -557,6 +557,7 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"9bEMq":[function(require,module,exports) {
+const galleryList = document.querySelector(".gallery");
 const images = [
     {
         url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -571,6 +572,10 @@ const images = [
         alt: "Group of Horses Running"
     }
 ];
+images.forEach((image)=>{
+    const img = `<li class="gallery__item"><img src=${image.url} alt=${image.alt}></li>`;
+    galleryList.insertAdjacentHTML("beforeend", img);
+});
 
 },{}]},["69vE2","9bEMq"], "9bEMq", "parcelRequire31b1")
 

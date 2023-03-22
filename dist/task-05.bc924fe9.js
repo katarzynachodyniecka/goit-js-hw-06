@@ -557,6 +557,11 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"aLAC2":[function(require,module,exports) {
+const takeName = document.querySelector("#name-input");
+const giveName = document.querySelector("#name-output");
+takeName.addEventListener("input", ()=>{
+    giveName.textContent = takeName.value !== "" ? takeName.value : "annonymous";
+});
 
 },{}]},["7cWWl","aLAC2"], "aLAC2", "parcelRequire31b1")
 
