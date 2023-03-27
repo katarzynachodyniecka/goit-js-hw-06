@@ -557,10 +557,10 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"bAtvb":[function(require,module,exports) {
-const slider = document.querySelector("#font-size-control");
+const input = document.querySelector("#font-size-control");
 const text = document.querySelector("#text");
-text.style.fontSize = slider.value + "px";
-slider.addEventListener("input", ()=>{
+text.style.fontSize = input.value + "px";
+input.addEventListener("input", ()=>{
     text.style.fontSize = input.value + "px";
 });
 
