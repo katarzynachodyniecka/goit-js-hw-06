@@ -559,10 +559,10 @@ function hmrAccept(bundle, id) {
 },{}],"bAtvb":[function(require,module,exports) {
 const slider = document.querySelector("#font-size-control");
 const text = document.querySelector("#text");
-const changeFontSize = ()=>{
-    text.style.fontSize = `${slider.value}px`;
-};
-slider.addEventListener("input", changeFontSize);
+text.style.fontSize = slider.value + "px";
+slider.addEventListener("input", ()=>{
+    text.style.fontSize = input.value + "px";
+});
 
 },{}]},["cpO8x","bAtvb"], "bAtvb", "parcelRequire31b1")
 
