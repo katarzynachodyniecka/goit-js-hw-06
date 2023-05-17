@@ -1,3 +1,5 @@
+https://katarzynachodyniecka.github.io/goit-js-hw-06/
+
 <h2>Acceptance criteria</h2>
 <li>goit-js-hw-06 repository created.</li>
 <li>In your submitted homework, there are two links: to the source files and your working page on GitHub Pages.</li>
